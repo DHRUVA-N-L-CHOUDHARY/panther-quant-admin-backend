@@ -21,7 +21,7 @@ catch(error)
 connect();
 // dotenv.config();
 app.use(cors({ origin: true, credentials: true }));
-app.use(express.json());
+// app.use(express.json());
 app.use("/api/user", userRoute);
 
 app.listen(8000,() => {
