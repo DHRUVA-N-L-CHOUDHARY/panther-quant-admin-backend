@@ -2,6 +2,7 @@ const express = require('express')
 const mongoose = require('mongoose')
 const app = express();
 const userRoute = require("./routes/users")
+const strategiesRoute = require("./routes/strategies")
 var cors = require('cors');
 
 
@@ -23,7 +24,7 @@ connect();
 app.use(cors({ origin: true, credentials: true }));
 // app.use(express.json());
 app.use("/api/user", userRoute);
-
+app.use("/api/strategies", strategiesRoute);
 app.listen(process.env.PORT||8000,() => {
     console.log("Server started on port 8000");
 });
