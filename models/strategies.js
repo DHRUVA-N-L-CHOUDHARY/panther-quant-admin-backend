@@ -31,7 +31,7 @@ const strategiesSchema = new mongoose.Schema(
         require: false,
     },
     stratergy_no:{
-        type: String,
+        type: Number,
         require: false,
     },
     minimal_roi:{
