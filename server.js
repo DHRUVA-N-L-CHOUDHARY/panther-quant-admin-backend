@@ -25,6 +25,6 @@ app.use(express.json());
 app.use("/api/user", userRoute);
 app.use("/api/strategies", strategiesRoute);
 app.use("/api/indicators", indicatorRoute);
-app.listen(5000, () => {
-  console.log("Server started on port 5000");
+app.listen(8000, () => {
+  console.log("Server started on port 8000");
 });
