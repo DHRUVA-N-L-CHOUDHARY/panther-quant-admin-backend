@@ -4,6 +4,9 @@ const IndicatorSchema = new mongoose.Schema({
   name: { type: String },
   elements: [
     {
+      key_name: {
+        type: String,
+      },
       name: {
         type: String,
       },
